@@ -5,6 +5,10 @@ nav {
 	justify-content: space-between;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
+	width: calc(100% - 48px);
+	top: 0;
+	position: sticky;
+	background-color: #fff;
 }
 .menu {
 	display: none;
@@ -44,9 +48,11 @@ nav {
 	color: var(--very-light-pink);
 	font-size: var(--sm);
 	margin-right: 12px;
+	cursor: pointer;
 }
 .navbar-shopping-cart {
 	position: relative;
+	cursor: pointer;
 }
 .navbar-shopping-cart div {
 	width: 16px;
@@ -72,4 +78,9 @@ nav {
 	.navbar-email {
 		display: none;
 	}
+}
+
+.navbar-email img{
+	margin-left: 10px;
+	transform: rotate(90deg);
 }

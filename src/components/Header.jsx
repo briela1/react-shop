@@ -7,6 +7,7 @@ import MyOrder from '@containers/MyOrder';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
+import flechita from '@icons/flechita.svg';
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
@@ -47,6 +48,7 @@ const Header = () => {
 				<ul>
 					<li className="navbar-email" onClick={handleToggle}>
 						user@example.com
+						<img src={flechita} alt="menu"></img>
 					</li>
 					<li className="navbar-shopping-cart"
 						onClick={() => setToggleOrders(!toggleOrders)}>
@@ -56,7 +58,7 @@ const Header = () => {
 				</ul>
 			</div>
 			{toggle && <Menu />}
-			{toggleOrders && <MyOrder />}
+			{toggleOrders && <MyOrder toggleOrders={toggleOrders} setToggleOrders={setToggleOrders} />}
 		</nav>
 	);
 }

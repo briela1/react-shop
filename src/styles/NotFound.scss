@@ -18,6 +18,8 @@
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
+    margin-top: 10px;
+    
 }
 
 .subtitle {
@@ -25,7 +27,7 @@
     font-size: var(--md);
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -38,6 +40,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
+    margin-top: 30px;
 }
 
 .email-image img {
@@ -58,11 +61,12 @@
 
 .login-button {
     margin-top: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
-@media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
-}
+// @media (max-width: 640px) {
+//     .logo {
+//         display: block;
+        
+//     }
+// }
